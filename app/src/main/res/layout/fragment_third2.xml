@@ -1,0 +1,276 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <ScrollView
+        android:id="@+id/scrollView2"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginStart="16dp"
+        android:layout_marginEnd="16dp"
+        android:layout_marginBottom="46dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:id="@+id/linearLayout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="#00FCE4EC"
+                android:backgroundTint="#00FCE4EC"
+                android:orientation="vertical"
+                android:textAlignment="textEnd"
+                app:layout_wrapBehaviorInParent="skipped">
+
+                <TextView
+                    android:id="@+id/textView3"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginStart="0dp"
+                    android:fontFamily="@font/roboto"
+                    android:text="Platforms"
+                    android:textAlignment="center"
+                    android:textAppearance="@style/TextAppearance.AppCompat.Large"
+                    android:textSize="14sp"
+                    app:layout_constraintStart_toStartOf="parent" />
+
+                <Switch
+                    android:id="@+id/switch2"
+                    android:layout_width="match_parent"
+                    android:layout_height="48dp"
+                    android:checked="false"
+                    android:fontFamily="@font/roboto"
+                    android:text="Tiktok" />
+
+                <Switch
+                    android:id="@+id/switch1"
+                    android:layout_width="match_parent"
+                    android:layout_height="48dp"
+                    android:fontFamily="@font/roboto"
+                    android:text="Instagram" />
+
+                <Switch
+                    android:id="@+id/switch3"
+                    android:layout_width="match_parent"
+                    android:layout_height="48dp"
+                    android:checked="false"
+                    android:fontFamily="@font/roboto"
+                    android:text="Youtube" />
+
+                <Switch
+                    android:id="@+id/switch4"
+                    android:layout_width="match_parent"
+                    android:layout_height="48dp"
+                    android:fontFamily="@font/roboto"
+                    android:text="Reddit" />
+
+                <Switch
+                    android:id="@+id/switch5"
+                    android:layout_width="match_parent"
+                    android:layout_height="48dp"
+                    android:fontFamily="@font/roboto"
+                    android:text="Facebook" />
+
+                <Switch
+                    android:id="@+id/switch6"
+                    android:layout_width="match_parent"
+                    android:layout_height="48dp"
+                    android:fontFamily="@font/roboto"
+                    android:text="Twitter" />
+
+            </LinearLayout>
+
+            <View
+                android:id="@+id/divider"
+                android:layout_width="match_parent"
+                android:layout_height="5dp"
+                android:background="?android:attr/listDivider" />
+
+            <LinearLayout
+                android:id="@+id/linearLayout2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="#FCE4EC"
+                android:backgroundTint="#FCE4EC"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/textView2"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/roboto"
+                    android:text="Categories"
+                    android:textAlignment="center"
+                    android:textAppearance="@style/TextAppearance.AppCompat.Small" />
+
+                <HorizontalScrollView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent">
+
+                        <Button
+                            android:id="@+id/imageView"
+                            style="@style/Widget.Material3.Button"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:backgroundTint="#E91E63"
+                            android:text="Nature"
+                            app:icon="@drawable/forest_fill0_wght400_grad0_opsz48" />
+
+                        <Button
+                            android:id="@+id/imageView2"
+                            style="@style/Widget.Material3.Button"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:backgroundTint="#E91E63"
+                            android:text="Law"
+                            app:icon="@drawable/gavel_fill0_wght400_grad0_opsz48" />
+
+                        <Button
+                            android:id="@+id/imageView3"
+                            style="@style/Widget.Material3.Button"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:backgroundTint="#E91E63"
+                            android:text="Networking"
+                            app:icon="@drawable/lan_fill0_wght400_grad0_opsz48" />
+
+                        <Button
+                            android:id="@+id/imageView4"
+                            style="@style/Widget.Material3.Button"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:backgroundTint="#E91E63"
+                            android:text="Art"
+                            app:icon="@drawable/palette_fill0_wght400_grad0_opsz48" />
+
+                        <Button
+                            android:id="@+id/imageView5"
+                            style="@style/Widget.Material3.Button"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:backgroundTint="#E91E63"
+                            android:text="Plants"
+                            app:icon="@drawable/potted_plant_fill0_wght400_grad0_opsz48" />
+
+                        <Button
+                            android:id="@+id/imageView6"
+                            style="@style/Widget.Material3.Button"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:backgroundTint="#E91E63"
+                            android:text="Science"
+                            app:icon="@drawable/rocket_launch_fill0_wght400_grad0_opsz48" />
+
+                        <Button
+                            android:id="@+id/imageView7"
+                            style="@style/Widget.Material3.Button"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:backgroundTint="#E91E63"
+                            android:text="Wellness"
+                            app:icon="@drawable/sentiment_calm_fill0_wght400_grad0_opsz48" />
+
+                        <Button
+                            android:id="@+id/imageView8"
+                            style="@style/Widget.Material3.Button"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:backgroundTint="#E91E63"
+                            android:text="Traveling"
+                            app:icon="@drawable/travel_explore_fill0_wght400_grad0_opsz48" />
+
+                        <Button
+                            android:id="@+id/imageView9"
+                            style="@style/Widget.Material3.Button"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:backgroundTint="#E91E63"
+                            android:text="Medicine"
+                            app:icon="@drawable/vaccines_fill0_wght400_grad0_opsz48" />
+                    </LinearLayout>
+                </HorizontalScrollView>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="horizontal">
+
+                <com.google.android.material.textfield.TextInputLayout
+                    android:id="@+id/textInputLayout"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="16dp"
+                    android:layout_marginTop="16dp">
+
+                    <com.google.android.material.textfield.TextInputEditText
+                        android:id="@+id/textinput"
+                        android:layout_width="272dp"
+                        android:layout_height="wrap_content"
+                        android:hint="Input custom channel / account" />
+                </com.google.android.material.textfield.TextInputLayout>
+
+                <com.google.android.material.floatingactionbutton.FloatingActionButton
+                    android:id="@+id/textinputbutton"
+                    android:layout_width="57dp"
+                    android:layout_height="56dp"
+                    android:layout_marginStart="4dp"
+                    android:layout_marginTop="20dp"
+                    android:clickable="true"
+                    app:srcCompat="@android:drawable/ic_menu_add" />
+            </LinearLayout>
+
+            <ScrollView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="16dp">
+
+                <LinearLayout
+                    android:id="@+id/textNew"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical" />
+            </ScrollView>
+
+        </LinearLayout>
+    </ScrollView>
+
+    <Button
+        android:id="@+id/buttonNext"
+        style="@style/Widget.AppCompat.Button.Colored"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:text="Scramble!"
+        android:textColorHighlight="#E91E63"
+        android:textColorLink="#E91E63"
+        app:icon="@android:drawable/ic_menu_send"
+        app:iconTint="#FFFFFF"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/scrollView2"
+        app:rippleColor="#E91E63" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

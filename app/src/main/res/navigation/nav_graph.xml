@@ -20,6 +20,9 @@
         <action
             android:id="@+id/action_FirstFragment_to_fourthFragment"
             app:destination="@id/Run_the_proces" />
+        <action
+            android:id="@+id/action_Home_to_thirdFragment2"
+            app:destination="@id/thirdFragment2" />
     </fragment>
     <fragment
         android:id="@+id/Detailed_stats"
@@ -50,5 +53,13 @@
         <action
             android:id="@+id/action_fourthFragment_to_FirstFragment"
             app:destination="@id/Home" />
+    </fragment>
+    <fragment
+        android:id="@+id/thirdFragment2"
+        android:name="com.example.uiclass2.ThirdFragment2"
+        android:label="ThirdFragment2" >
+        <action
+            android:id="@+id/action_thirdFragment2_to_Run_the_proces"
+            app:destination="@id/Run_the_proces" />
     </fragment>
 </navigation>
